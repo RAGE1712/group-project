@@ -1,0 +1,133 @@
+/*! -----------------Reset Styles ------------------*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+hr {
+  border-color: #0a224a;
+  margin: 0;
+}
+.list {
+  list-style: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*!------------ Price ----------  */
+.price-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.price-item-header {
+  color: var(--blue-font, #0a224a);
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  position: relative;
+}
+.price-item-header::before {
+  height: 3px;
+  width: 40px;
+  border-radius: 2px;
+  background-color: transparent;
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+}
+.price-item-header:hover,
+.price-item-header:focus {
+  transform: translateX(60px);
+  transition: transform 500ms linear;
+}
+
+.price-item-header:hover::before,
+.price-item-header:focus::before {
+  transform: translateX(-60px);
+  background-color: #0a224a;
+  transition: background-color 500ms cubic-bezier(1, 0, 1, 1),
+    transform 500ms linear;
+}
+.price-item-value {
+  color: var(--blue-font, #0a224a);
+  text-align: right;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.price {
+  padding-bottom: 64px;
+}
+
+/*! ------ products --------- */
+.products-header {
+  color: var(--blue-font, #0a224a);
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 33px;
+}
+.products-list {
+  display: flex;
+
+  gap: 16px;
+  justify-content: center;
+}
+.products-description {
+  color: var(--blue-font, #0a224a);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 16px;
+}
+.products {
+  padding-bottom: 64px;
+}
+.products-item:not(:nth-child(-n + 1)) {
+  display: none;
+}
