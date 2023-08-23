@@ -1,5 +1,5 @@
 @media screen and (min-width: 375px) {
-  .price-item-header {
+  .price-item-link {
     font-size: 28px;
   }
   .products-header {
@@ -17,7 +17,7 @@
   .products-item:not(:nth-child(-n + 2)) {
     display: none;
   }
-  .price-item-header {
+  .price-item-link {
     font-size: 32px;
   }
   .products-header {
